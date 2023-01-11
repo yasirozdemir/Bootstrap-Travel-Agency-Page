@@ -4,6 +4,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.jumbotron {
+  background-image: url(./assets/boston.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .overlay {
   position: absolute;
   /* opacity: 0%; */
