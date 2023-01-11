@@ -8,6 +8,7 @@ html {
   background-image: url(./assets/boston.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 0;
 }
 
 .overlay {
