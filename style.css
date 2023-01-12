@@ -7,14 +7,24 @@ html {
 .jumbotron {
   background-image: url(./assets/boston.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 85%;
   border-radius: 0;
+}
+
+#jumbotron {
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 270px) {
+  #jumbotron {
+    margin-top: 30px;
+  }
 }
 
 .overlay {
   position: absolute;
-  /* opacity: 0%; */
-  transition: opacity 300ms;
+  opacity: 0%;
+  transition: opacity 100ms;
   top: 0;
   right: 0;
   bottom: 0;
@@ -27,6 +37,20 @@ html {
     rgba(0, 0, 0, 0.7497199563419117) 100%
   );
   font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.overlay:hover {
+  opacity: 100%;
+}
+
+.overlay > .badge {
+  top: -7px;
+  right: -7px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 150, 13);
 }
 
 .border-radius-10 {

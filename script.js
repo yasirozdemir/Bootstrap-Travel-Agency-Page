@@ -12,23 +12,11 @@ function printTotalNumOnFooter() {
   ).innerText = `Total number of travels: ${totalNumberOfTravels()}`;
 }
 
-// TODO
-// function overlaysHoverable() {
-//   let dealWeekOverlays = document.querySelectorAll(
-//     "#deal-week #deal-week-content img + .overlay"
-//   );
-//   for (overlay of dealWeekOverlays) {
-//     overlay.addEventListener("s", (event) => {
-//       console.log(event);
-//     });
-//   }
-// }
-
 function addHotBadge() {
-  let summerNode = document.querySelectorAll("#summer .overlay p");
-  for (badge of summerNode) {
-    badge.innerHTML +=
-      ' <span class="badge badge-warning"><i class="bi bi-fire"></i></span>';
+  let summerNode = document.querySelectorAll("#summer .overlay");
+  for (overlay of summerNode) {
+    overlay.innerHTML +=
+      '<span class="badge position-absolute text-dark shadow d-flex justify-content-center align-items-center"><i class="bi bi-fire"></i></span>';
   }
 }
 
@@ -42,6 +30,5 @@ function deleteCards() {
 
 window.onload = () => {
   printTotalNumOnFooter();
-  // overlaysHoverable();
   addHotBadge();
 };
